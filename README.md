@@ -38,6 +38,6 @@ let g:lightline = {
     \ }
 ```
 
-## why prefer this theme instead of the official one
+## why prefer this one instead of the official material vim theme
 
 That one is too ugly.
