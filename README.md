@@ -27,6 +27,9 @@ This theme was ported from [equinusocio/vsc-material-theme](https://github.com/e
 ```vim
 Plug 'Hyzeta/vim_equinusocio_material'
 
+" true colors are required
+set termguicolors
+
 " if you prefer the default one, comment out this line
 let g:equinusocio_material_style='darker'
 
@@ -38,6 +41,6 @@ let g:lightline = {
     \ }
 ```
 
-## why prefer this one instead of the official material vim theme
+## why prefer this one instead of the official vim port
 
 That one is too ugly.

@@ -3,9 +3,8 @@
 " license: apache-2.0
 
 if exists('g:lightline')
-    let g:equinusocio_material_style = get(g:, 'equinusocio_material_style', 'default')
 
-    if g:equinusocio_material_style == 'darker'
+    if get(g:, 'equinusocio_material_style', 'default') == 'darker'
         let s:black_soft = '#545454'
         let s:background = '#212121'
         let s:cursor_guide = '#171717'
