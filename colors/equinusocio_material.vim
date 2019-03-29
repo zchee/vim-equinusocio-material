@@ -15,7 +15,7 @@ endif
 
 let g:colors_name = "equinusocio_material"
 
-if !(has('termguicolors') && &termguicolors) && !has('gui_running')
+if !(has('termguicolors') && &termguicolors) && !has('gui_running') && !has('nvim')
     finish
 endif
 
