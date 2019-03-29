@@ -166,3 +166,46 @@ call s:HL('Ignore', s:none, s:none, s:none)
 call s:HL('Error', s:red, s:none, s:none)
 call s:HL('Todo', s:orange, s:none, s:none)
 " ====================================================
+
+
+" ====================================================
+" vim8/neovim buildin terminal colors
+" ----------------------------------------------------
+if has('nvim')
+    let g:terminal_color_0 = s:black
+    let g:terminal_color_1 = s:red
+    let g:terminal_color_2 = s:green
+    let g:terminal_color_3 = s:yellow
+    let g:terminal_color_4 = s:blue
+    let g:terminal_color_5 = s:magenta
+    let g:terminal_color_6 = s:cyan
+    let g:terminal_color_7 = s:white
+    let g:terminal_color_8 = s:black_soft
+    let g:terminal_color_9 = s:red
+    let g:terminal_color_10 = s:green
+    let g:terminal_color_11 = s:yellow
+    let g:terminal_color_12 = s:blue
+    let g:terminal_color_13 = s:magenta
+    let g:terminal_color_14 = s:cyan
+    let g:terminal_color_15 = s:white
+elseif exists('*term_setansicolors')
+    let g:terminal_ansi_colors = [
+        \ s:black,
+        \ s:red,
+        \ s:green,
+        \ s:yellow,
+        \ s:blue,
+        \ s:magenta,
+        \ s:cyan,
+        \ s:white,
+        \ s:black_soft,
+        \ s:red,
+        \ s:green,
+        \ s:yellow,
+        \ s:blue,
+        \ s:magenta,
+        \ s:cyan,
+        \ s:white,
+        \ ]
+endif
+" ====================================================
