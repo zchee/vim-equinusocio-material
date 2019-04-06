@@ -1,6 +1,11 @@
-" author: ling(github.com/hyzeta)
-" email of author: hyzeta@outlook.com
-" license: apache-2.0
+" ----------------------------------------------------------------------
+" This Source Code Form is subject to the terms of the Mozilla Public
+" License, v. 2.0. If a copy of the MPL was not distributed with this
+" file, You can obtain one at https://mozilla.org/MPL/2.0/.
+" ----------------------------------------------------------------------
+" Developers who have contributed to this file:
+" 1. Ling (github.com/hyzeta)
+" ----------------------------------------------------------------------
 
 if exists('g:lightline')
 
