@@ -45,7 +45,10 @@ let s:blue = '#82aaff'
 let s:magenta = '#c792ea'
 let s:cyan = '#89ddff'
 let s:white = '#ffffff'
+" ---------------------------
 let s:foreground = '#eeffff'
+let s:caret = '#ffcc00'
+" ---------------------------
 let s:none = 'NONE'
 let s:underline = 'underline'
 let s:undercurl = 'undercurl'
@@ -83,8 +86,8 @@ endfunction
 " ----------------------------------------------------
 call s:HL('ColorColumn', s:none, s:cursor_guide, s:none)
 call s:HL('Conceal', s:blue, s:none, s:none)
-call s:HL('Cursor', s:background, s:foreground, s:none)
-call s:HL('CursorIM', s:background, s:foreground, s:none)
+call s:HL('Cursor', s:background, s:caret, s:none)
+call s:HL('CursorIM', s:background, s:caret, s:none)
 call s:HL('CursorColumn', s:none, s:cursor_guide, s:none)
 call s:HL('CursorLine', s:none, s:cursor_guide, s:none)
 " ----------------------------------------------------
