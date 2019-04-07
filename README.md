@@ -12,13 +12,13 @@ Try this theme if others don't meet your needs.
 
 ## screenshots
 
+### default
+
+![](./screenshots/0.png)
+
 ### darker
 
 ![](./screenshots/1.png)
-
-### default
-
-![](./screenshots/2.png)
 
 ## how to use
 
