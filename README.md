@@ -42,3 +42,7 @@ let g:lightline = {
     \ 'colorscheme': 'equinusocio_material',
     \ }
 ```
+
+## Other
+
+If you are using iterm, you can try this [Hyzeta/iterm2-equinusocio-material](https://github.com/Hyzeta/iterm2-equinusocio-material).
