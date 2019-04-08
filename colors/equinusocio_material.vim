@@ -28,12 +28,10 @@ if get(g:, 'equinusocio_material_style', 'default') == 'darker'
     let s:black_soft = '#545454'
     let s:background = '#212121'
     let s:cursor_guide = '#171717'
-    let s:selection = '#353535'
 else
     let s:black_soft = '#556e79'
     let s:background = '#263238'
     let s:cursor_guide = '#1b2327'
-    let s:selection = '#33464a'
 endif
 
 let s:black = '#000000'
@@ -48,6 +46,7 @@ let s:white = '#ffffff'
 " ---------------------------
 let s:foreground = '#eeffff'
 let s:caret = '#ffcc00'
+let s:selection = '#515c69'
 " ---------------------------
 let s:none = 'NONE'
 let s:underline = 'underline'
@@ -143,8 +142,8 @@ call s:HL('TabLineFill', s:none, s:none, s:none)
 call s:HL('TabLineSel', s:foreground, s:black_soft, s:none)
 call s:HL('Terminal', s:foreground, s:background, s:none)
 call s:HL('Title', s:red, s:none, s:none)
-call s:HL('Visual', s:none, s:selection, s:none)
-call s:HL('VisualNOS', s:none, s:selection, s:none)
+call s:HL('Visual', s:foreground, s:selection, s:none)
+call s:HL('VisualNOS', s:foreground, s:selection, s:none)
 call s:HL('WarningMsg', s:red, s:none, s:none)
 call s:HL('WildMenu', s:black, s:cyan, s:none)
 " ====================================================
