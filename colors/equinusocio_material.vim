@@ -28,10 +28,12 @@ if get(g:, 'equinusocio_material_style', 'default') == 'darker'
     let s:black_soft = '#545454'
     let s:background = '#212121'
     let s:cursor_guide = '#171717'
+    let s:selection = '#616161'
 else
     let s:black_soft = '#556e79'
     let s:background = '#263238'
     let s:cursor_guide = '#1b2327'
+    let s:selection = '#667278'
 endif
 
 let s:black = '#000000'
@@ -46,7 +48,6 @@ let s:white = '#ffffff'
 " ---------------------------
 let s:foreground = '#eeffff'
 let s:caret = '#ffcc00'
-let s:selection = '#515c69'
 " ---------------------------
 let s:none = 'NONE'
 let s:underline = 'underline'
