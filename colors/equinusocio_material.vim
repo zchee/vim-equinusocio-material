@@ -12,7 +12,7 @@
 
 set background=dark
 if version > 580
-    hi clear
+    highlight clear
     if exists("syntax_on")
         syntax reset
     endif
@@ -57,26 +57,26 @@ let s:inverse = 'inverse'
 
 
 function! s:HL(group, fg, bg, attr)
-    execute 'hi ' . a:group . ' ctermfg=NONE'
-    execute 'hi ' . a:group . ' ctermbg=NONE'
-    execute 'hi ' . a:group . ' cterm=NONE'
+    execute 'highlight ' . a:group . ' ctermfg=NONE'
+    execute 'highlight ' . a:group . ' ctermbg=NONE'
+    execute 'highlight ' . a:group . ' cterm=NONE'
 
     if !empty(a:fg)
-        execute 'hi ' . a:group . ' guifg=' . a:fg
+        execute 'highlight ' . a:group . ' guifg=' . a:fg
     else
-        execute 'hi ' . a:group . ' guifg=NONE'
+        execute 'highlight ' . a:group . ' guifg=NONE'
     endif
 
     if !empty(a:bg)
-        execute 'hi ' . a:group . ' guibg=' . a:bg
+        execute 'highlight ' . a:group . ' guibg=' . a:bg
     else
-        execute 'hi ' . a:group . ' guibg=NONE'
+        execute 'highlight ' . a:group . ' guibg=NONE'
     endif
 
     if !empty(a:attr)
-        execute 'hi ' . a:group . ' gui=' . a:attr
+        execute 'highlight ' . a:group . ' gui=' . a:attr
     else
-        execute 'hi ' . a:group . ' gui=NONE'
+        execute 'highlight ' . a:group . ' gui=NONE'
     endif
 endfunction
 
