@@ -108,10 +108,10 @@ call s:HL('Folded', s:foreground, s:black_soft, s:none)
 call s:HL('FoldColumn', s:foreground, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('SignColumn', s:none, s:none, s:none)
-call s:HL('IncSearch', s:black, s:magenta, s:none)
+call s:HL('IncSearch', s:background, s:magenta, s:none)
 call s:HL('LineNr', s:black_soft, s:none, s:none)
 call s:HL('CursorLineNr', s:foreground, s:none, s:none)
-call s:HL('MatchParen', s:black, s:magenta, s:none)
+call s:HL('MatchParen', s:background, s:red, s:none)
 " ----------------------------------------------------
 call s:HL('ModeMsg', s:foreground, s:none, s:none)
 call s:HL('MoreMsg', s:red, s:none, s:none)
@@ -125,13 +125,13 @@ call s:HL('PmenuThumb', s:none, s:foreground, s:none)
 " ----------------------------------------------------
 call s:HL('Question', s:red, s:none, s:none)
 call s:HL('QuickFixLine', s:foreground, s:background, s:none) " link it to normal
-call s:HL('Search', s:black, s:magenta, s:none)
+call s:HL('Search', s:background, s:magenta, s:none)
 call s:HL('SpecialKey', s:black_soft, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('SpellBad', s:red, s:black, s:none)
-call s:HL('SpellCap', s:red, s:black, s:none)
-call s:HL('SpellLocal', s:red, s:black, s:none)
-call s:HL('SpellRare', s:red, s:black, s:none)
+call s:HL('SpellBad', s:white, s:red, s:none)
+call s:HL('SpellCap', s:white, s:red, s:none)
+call s:HL('SpellLocal', s:white, s:red, s:none)
+call s:HL('SpellRare', s:white, s:red, s:none)
 " ----------------------------------------------------
 call s:HL('StatusLine', s:foreground, s:none, s:none)
 call s:HL('StatusLineNC', s:black_soft, s:none, s:none)
