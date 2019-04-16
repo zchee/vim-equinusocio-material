@@ -111,7 +111,7 @@ call s:HL('SignColumn', s:none, s:none, s:none)
 call s:HL('IncSearch', s:black, s:magenta, s:none)
 call s:HL('LineNr', s:black_soft, s:none, s:none)
 call s:HL('CursorLineNr', s:foreground, s:none, s:none)
-call s:HL('MatchParen', s:background, s:red, s:none)
+call s:HL('MatchParen', s:background, s:orange, s:none)
 " ----------------------------------------------------
 call s:HL('ModeMsg', s:foreground, s:none, s:none)
 call s:HL('MoreMsg', s:red, s:none, s:none)
@@ -158,16 +158,19 @@ call s:HL('Comment', s:black_soft, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Constant', s:orange, s:none, s:none)
 call s:HL('String', s:green, s:none, s:none)
+call s:HL('Character', s:cyan, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Identifier', s:blue, s:none, s:none)
+call s:HL('Function', s:blue, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Statement', s:cyan, s:none, s:none)
+call s:HL('Operator', s:magenta, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('PreProc', s:cyan, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Type', s:magenta, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('Special', s:orange, s:none, s:none)
+call s:HL('Special', s:cyan, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Underlined', s:blue, s:none, s:none)
 call s:HL('Ignore', s:none, s:none, s:none)
