@@ -156,9 +156,10 @@ call s:HL('WildMenu', s:black, s:cyan, s:none)
 " ----------------------------------------------------
 call s:HL('Comment', s:black_soft, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('Constant', s:orange, s:none, s:none)
+call s:HL('Constant', s:foreground, s:none, s:none)
 call s:HL('String', s:green, s:none, s:none)
-call s:HL('Character', s:cyan, s:none, s:none)
+call s:HL('Number', s:orange, s:none, s:none)
+call s:HL('Boolean', s:orange, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Identifier', s:blue, s:none, s:none)
 call s:HL('Function', s:blue, s:none, s:none)
