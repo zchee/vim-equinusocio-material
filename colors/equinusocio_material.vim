@@ -122,7 +122,7 @@ call s:HL('EndOfBuffer', s:background, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('ErrorMsg', s:red, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('VertSplit', s:background, s:none, s:none)
+call s:HL('VertSplit', s:cursor_guide, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Folded', s:foreground, s:black_soft, s:none)
 call s:HL('FoldColumn', s:foreground, s:none, s:none)
@@ -168,7 +168,6 @@ call s:HL('VisualNOS', s:foreground, s:selection, s:none)
 call s:HL('WarningMsg', s:red, s:none, s:none)
 call s:HL('WildMenu', s:black, s:cyan, s:none)
 " ====================================================
-
 
 
 " ====================================================
