@@ -106,8 +106,8 @@ endfunction
 " ----------------------------------------------------
 call s:HL('ColorColumn', s:none, s:cursor_guide, s:none)
 call s:HL('Conceal', s:blue, s:none, s:none)
-call s:HL('Cursor', s:background, s:caret, s:none)
-call s:HL('CursorIM', s:background, s:caret, s:none)
+call s:HL('Cursor', s:black, s:caret, s:none)
+call s:HL('CursorIM', s:black, s:caret, s:none)
 call s:HL('CursorColumn', s:none, s:cursor_guide, s:none)
 call s:HL('CursorLine', s:none, s:cursor_guide, s:none)
 " ----------------------------------------------------
@@ -131,7 +131,7 @@ call s:HL('SignColumn', s:none, s:none, s:none)
 call s:HL('IncSearch', s:black, s:magenta, s:none)
 call s:HL('LineNr', s:black_soft, s:none, s:none)
 call s:HL('CursorLineNr', s:foreground, s:none, s:none)
-call s:HL('MatchParen', s:background, s:orange, s:none)
+call s:HL('MatchParen', s:black, s:orange, s:none)
 " ----------------------------------------------------
 call s:HL('ModeMsg', s:foreground, s:none, s:none)
 call s:HL('MoreMsg', s:red, s:none, s:none)
