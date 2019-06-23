@@ -148,10 +148,10 @@ call s:HL('QuickFixLine', s:foreground, s:background, s:none) " link it to norma
 call s:HL('Search', s:black, s:magenta, s:none)
 call s:HL('SpecialKey', s:black_soft, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('SpellBad', s:white, s:red, s:none)
-call s:HL('SpellCap', s:white, s:red, s:none)
-call s:HL('SpellLocal', s:white, s:red, s:none)
-call s:HL('SpellRare', s:white, s:red, s:none)
+call s:HL('SpellBad', s:red, s:black, s:none)
+call s:HL('SpellCap', s:red, s:black, s:none)
+call s:HL('SpellLocal', s:red, s:black, s:none)
+call s:HL('SpellRare', s:red, s:black, s:none)
 " ----------------------------------------------------
 call s:HL('StatusLine', s:foreground, s:none, s:none)
 call s:HL('StatusLineNC', s:black_soft, s:none, s:none)
