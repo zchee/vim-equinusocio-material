@@ -1,31 +1,20 @@
-" SPDX-License-Identifier: BSD-3-Clause
+"===========================================================================
+" SPDX-License-Identifier: Apache-2.0
 "
-" Copyright (c) 2019 Ling <hyzeta@outlook.com>.
-" All rights reserved.
+" Copyright 2017-2019 Chuyuan Ling <chuyuan.ling@outlook.com>
 "
-" Redistribution and use in source and binary forms, with or without
-" modification, are permitted provided that the following conditions
-" are met:
-" 1. Redistributions of source code must retain the above copyright
-"    notice, this list of conditions and the following disclaimer.
-" 2. Redistributions in binary form must reproduce the above copyright
-"    notice, this list of conditions and the following disclaimer in the
-"    documentation and/or other materials provided with the distribution.
-" 3. Neither the name of the copyright holder nor the names of its
-"    contributors may be used to endorse or promote products derived
-"    from this software without specific prior written permission.
+" Licensed under the Apache License, Version 2.0 (the "License");
+" you may not use this file except in compliance with the License.
+" You may obtain a copy of the License at
 "
-" THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-" "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-" LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-" A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-" HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-" SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-" LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-" DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-" THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-" (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-" OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+" http://www.apache.org/licenses/LICENSE-2.0
+"
+" Unless required by applicable law or agreed to in writing, software
+" distributed under the License is distributed on an "AS IS" BASIS,
+" WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+" See the License for the specific language governing permissions and
+" limitations under the License.
+"===========================================================================
 
 " vim color file
 " equinusocio_material
@@ -122,7 +111,7 @@ call s:HL('EndOfBuffer', s:background, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('ErrorMsg', s:red, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('VertSplit', s:black, s:none, s:none)
+call s:HL('VertSplit', s:cursor_guide, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Folded', s:foreground, s:black_soft, s:none)
 call s:HL('FoldColumn', s:foreground, s:none, s:none)
@@ -179,16 +168,28 @@ call s:HL('Constant', s:foreground, s:none, s:none)
 call s:HL('String', s:green, s:none, s:none)
 call s:HL('Number', s:orange, s:none, s:none)
 call s:HL('Boolean', s:orange, s:none, s:none)
+call s:HL('Float', s:orange, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('Identifier', s:blue, s:none, s:none)
+call s:HL('Identifier', s:yellow, s:none, s:none)
 call s:HL('Function', s:blue, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('Statement', s:cyan, s:none, s:none)
+call s:HL('Statement', s:orange, s:none, s:none)
+call s:HL('Conditional', s:cyan, s:none, s:none)
+call s:HL('Repeat', s:cyan, s:none, s:none)
 call s:HL('Operator', s:magenta, s:none, s:none)
+call s:HL('Keyword', s:orange, s:none, s:none)
+call s:HL('Exception', s:cyan, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('PreProc', s:cyan, s:none, s:none)
+call s:HL('Include', s:cyan, s:none, s:none)
+call s:HL('Define', s:blue, s:none, s:none)
+call s:HL('Macro', s:blue, s:none, s:none)
+call s:HL('PreCondit', s:cyan, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('Type', s:magenta, s:none, s:none)
+call s:HL('Type', s:yellow, s:none, s:none)
+call s:HL('StorageClass', s:magenta, s:none, s:none)
+call s:HL('Structure', s:magenta, s:none, s:none)
+call s:HL('Typedef', s:magenta, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Special', s:cyan, s:none, s:none)
 " ----------------------------------------------------
@@ -197,7 +198,6 @@ call s:HL('Ignore', s:none, s:none, s:none)
 call s:HL('Error', s:red, s:none, s:none)
 call s:HL('Todo', s:orange, s:none, s:none)
 " ====================================================
-
 
 " ====================================================
 " vim8/neovim buildin terminal colors
