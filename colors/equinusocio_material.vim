@@ -124,7 +124,7 @@ call s:HL('SignColumn', s:none, s:none, s:none)
 call s:HL('IncSearch', s:black, s:magenta, s:none)
 call s:HL('LineNr', s:black_soft, s:none, s:none)
 call s:HL('CursorLineNr', s:foreground, s:none, s:none)
-call s:HL('MatchParen', s:black, s:orange, s:none)
+call s:HL('MatchParen', s:black, s:red, s:none)
 " ----------------------------------------------------
 call s:HL('ModeMsg', s:foreground, s:none, s:none)
 call s:HL('MoreMsg', s:red, s:none, s:none)
