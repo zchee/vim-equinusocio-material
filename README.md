@@ -1,10 +1,5 @@
 # equinusocio's material theme for vim
 
-[![SPDX-License-Identifier: Apache-2.0](https://img.shields.io/static/v1.svg?label=SPDX-License-Identifier&message=Apache-2.0&logoColor=ffffff&labelColor=565b60&color=e72565&style=flat&logo=spdx)](https://spdx.org/licenses/Apache-2.0.html)
-
-[![Developer: Ling (github.com/hyzeta)](https://img.shields.io/static/v1.svg?label=Developer&message=Ling%20%28github.com/hyzeta%29&logoColor=ffffff&labelColor=565b60&color=d242c1&style=flat&logo=github)](https://github.com/hyzeta)
-[![Email: hyzeta@outlook.com](https://img.shields.io/static/v1.svg?label=Email&message=hyzeta%40outlook.com&logoColor=ffffff&labelColor=565b60&color=d242c1&style=flat&logo=gmail)](mailto:hyzeta@outlook.com)
-
 This theme was ported from [equinusocio/vsc-material-theme](https://github.com/equinusocio/vsc-material-theme).
 
 Try this theme if others don't meet your needs.
@@ -26,7 +21,7 @@ Try this theme if others don't meet your needs.
 * vim-plug
 
 ```vim
-Plug 'Hyzeta/vim_equinusocio_material'
+Plug 'ChuLing/vim_equinusocio_material'
 
 " true colors are required for vim in terminal
 set termguicolors
@@ -47,4 +42,22 @@ let g:lightline = {
 
 ## Other
 
-If you are using iterm, you can try this [Hyzeta/iterm2-equinusocio-material](https://github.com/Hyzeta/iterm2-equinusocio-material).
+If you are using iterm, you can try this [ChuLing/iterm2-equinusocio-material](https://github.com/ChuLing/iterm2-equinusocio-material).
+
+## License
+
+```
+Copyright 2017-2019 CHU Ling <meetchuling@outlook.com>
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
