@@ -39,7 +39,7 @@ if get(g:, 'equinusocio_material_style', 'default') == 'darker'
     let s:cursor_guide = '#171717'
     let s:selection = '#616161'
 else
-    let s:black_soft = '#556e79'
+    let s:black_soft = '#546e7a'
     let s:background = '#263238'
     let s:cursor_guide = '#1b2327'
     let s:selection = '#667278'
