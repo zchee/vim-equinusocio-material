@@ -21,7 +21,7 @@ Try this theme if others don't meet your needs.
 * vim-plug
 
 ```vim
-Plug 'unlimitedsky/iterm2-equinusocio-material'
+Plug 'unlimitedsky/vim_equinusocio_material'
 
 " true colors are required for vim in terminal
 set termguicolors
