@@ -126,10 +126,10 @@ call s:HL('QuickFixLine', s:foreground, s:background, s:none) " link it to norma
 call s:HL('Search', s:black, s:magenta, s:none)
 call s:HL('SpecialKey', s:black_soft, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('SpellBad', s:red, s:black, s:none)
-call s:HL('SpellCap', s:red, s:black, s:none)
-call s:HL('SpellLocal', s:red, s:black, s:none)
-call s:HL('SpellRare', s:red, s:black, s:none)
+call s:HL('SpellBad', s:none, s:black, s:none)
+call s:HL('SpellCap', s:none, s:black, s:none)
+call s:HL('SpellLocal', s:none, s:black, s:none)
+call s:HL('SpellRare', s:none, s:black, s:none)
 " ----------------------------------------------------
 call s:HL('StatusLine', s:foreground, s:none, s:none)
 call s:HL('StatusLineNC', s:black_soft, s:none, s:none)
@@ -182,7 +182,7 @@ call s:HL('Typedef', s:magenta, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Special', s:cyan, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('Underlined', s:blue, s:none, s:none)
+call s:HL('Underlined', s:blue, s:none, s:underline)
 call s:HL('Ignore', s:none, s:none, s:none)
 call s:HL('Error', s:red, s:none, s:none)
 call s:HL('Todo', s:orange, s:none, s:none)
