@@ -51,26 +51,26 @@ let s:inverse = 'inverse'
 
 
 function! s:HL(group, fg, bg, attr)
-    execute 'highlight ' . a:group . ' ctermfg=NONE'
-    execute 'highlight ' . a:group . ' ctermbg=NONE'
-    execute 'highlight ' . a:group . ' cterm=NONE'
+    execute 'highlight! ' . a:group . ' ctermfg=NONE'
+    execute 'highlight! ' . a:group . ' ctermbg=NONE'
+    execute 'highlight! ' . a:group . ' cterm=NONE'
 
     if !empty(a:fg)
-        execute 'highlight ' . a:group . ' guifg=' . a:fg
+        execute 'highlight! ' . a:group . ' guifg=' . a:fg
     else
-        execute 'highlight ' . a:group . ' guifg=NONE'
+        execute 'highlight! ' . a:group . ' guifg=NONE'
     endif
 
     if !empty(a:bg)
-        execute 'highlight ' . a:group . ' guibg=' . a:bg
+        execute 'highlight! ' . a:group . ' guibg=' . a:bg
     else
-        execute 'highlight ' . a:group . ' guibg=NONE'
+        execute 'highlight! ' . a:group . ' guibg=NONE'
     endif
 
     if !empty(a:attr)
-        execute 'highlight ' . a:group . ' gui=' . a:attr
+        execute 'highlight! ' . a:group . ' gui=' . a:attr
     else
-        execute 'highlight ' . a:group . ' gui=NONE'
+        execute 'highlight! ' . a:group . ' gui=NONE'
     endif
 endfunction
 
