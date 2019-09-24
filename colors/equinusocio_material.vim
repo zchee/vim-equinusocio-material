@@ -1,6 +1,3 @@
-" SPDX-License-Identifier: MIT
-" Copyright 2016-2019 unlimitedsky <genling.li@outlook.com>
-
 " vim color file
 " equinusocio_material
 

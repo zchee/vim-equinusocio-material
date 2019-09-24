@@ -47,7 +47,7 @@ If you are using iterm, you can try this [chuling/iterm2-equinusocio-material](h
 ## License
 
 ```
-Copyright 2017-2019 chuling <genling.li@outlook.com>
+Copyright 2017-2019 chuling <meetchuling@outlook.com>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

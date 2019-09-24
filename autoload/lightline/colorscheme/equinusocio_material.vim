@@ -1,5 +1,4 @@
-" SPDX-License-Identifier: MIT
-" Copyright 2016-2019 unlimitedsky <genling.li@outlook.com>
+" lightline
 
 if exists('g:lightline')
 
