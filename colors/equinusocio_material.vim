@@ -159,11 +159,11 @@ call s:HL('Float', s:orange, s:none, s:none)
 call s:HL('Identifier', s:yellow, s:none, s:none)
 call s:HL('Function', s:blue, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('Statement', s:orange, s:none, s:none)
+call s:HL('Statement', s:magenta, s:none, s:none)
 call s:HL('Conditional', s:cyan, s:none, s:none)
 call s:HL('Repeat', s:cyan, s:none, s:none)
 call s:HL('Operator', s:magenta, s:none, s:none)
-call s:HL('Keyword', s:orange, s:none, s:none)
+call s:HL('Keyword', s:magenta, s:none, s:none)
 call s:HL('Exception', s:cyan, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('PreProc', s:cyan, s:none, s:none)
