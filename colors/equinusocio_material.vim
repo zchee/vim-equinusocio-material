@@ -114,7 +114,7 @@ call s:HL('NonText', s:black_soft, s:none, s:none)
 call s:HL('Normal', s:foreground, s:background, s:none) " base color
 " ----------------------------------------------------
 call s:HL('Pmenu', s:foreground, s:black_soft, s:none)
-call s:HL('PmenuSel', s:black, s:foreground, s:none)
+call s:HL('PmenuSel', s:cyan, s:black, s:none)
 call s:HL('PmenuSbar', s:none, s:black_soft, s:none)
 call s:HL('PmenuThumb', s:none, s:foreground, s:none)
 " ----------------------------------------------------
