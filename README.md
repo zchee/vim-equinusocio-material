@@ -45,7 +45,7 @@ let g:lightline = {
 
 ## Other
 
-If you are using iterm, you can try this [chuling/iterm2-equinusocio-material](https://github.com/chuling/iterm2-equinusocio-material).
+If you are using iterm, you might like to try this [chuling/iterm2-equinusocio-material](https://github.com/chuling/iterm2-equinusocio-material).
 
 ## License
 
