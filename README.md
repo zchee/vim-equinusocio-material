@@ -21,7 +21,7 @@ Try this theme if others don't meet your needs.
 * vim-plug
 
 ```vim
-Plug 'chuling/vim_equinusocio_material'
+Plug 'chuling/vim-equinusocio-material'
 
 " true colors are required for vim in terminal
 set termguicolors
@@ -36,8 +36,8 @@ colorscheme equinusocio_material
 
 " this theme has a buildin lightline theme, you can turn it on
 let g:lightline = {
-    \ 'colorscheme': 'equinusocio_material',
-    \ }
+  \ 'colorscheme': 'equinusocio_material',
+  \ }
 ```
 
 ## Other
@@ -47,7 +47,7 @@ If you are using iterm, you can try this [chuling/iterm2-equinusocio-material](h
 ## License
 
 ```
-Copyright 2017-2019 chuling <meetchuling@outlook.com>
+Copyright 2017 chuling <meetchuling@outlook.com>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
