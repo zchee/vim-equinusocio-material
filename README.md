@@ -1,20 +1,20 @@
-# equinusocio's material theme for vim
+# Equinusocio's material theme for vim
 
 This theme was ported from [equinusocio/vsc-material-theme](https://github.com/equinusocio/vsc-material-theme).
 
 Try this theme if others don't meet your needs.
 
-## screenshots
+## Preview
 
-### default
+### Default
 
 ![](./screenshots/0.png)
 
-### darker
+### Darker
 
 ![](./screenshots/1.png)
 
-## how to use
+## How to use
 
 **IMPORTANT: True colors are required for vim in terminal**
 
