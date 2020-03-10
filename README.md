@@ -25,7 +25,7 @@ Plug 'chuling/vim-equinusocio-material'
 
 " true colors are required for vim in terminal
 set termguicolors
-set background = dark
+set background=dark
 
 " if you prefer the default one, comment out this line
 let g:equinusocio_material_style = 'darker'
