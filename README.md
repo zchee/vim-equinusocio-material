@@ -27,10 +27,10 @@ Plug 'chuling/vim-equinusocio-material'
 set termguicolors
 
 " if you prefer the default one, comment out this line
-let g:equinusocio_material_style='darker'
+let g:equinusocio_material_style = 'darker'
 
 " comment out this line to make vertsplit invisible
-let g:equinusocio_material_vertsplit='visible'
+let g:equinusocio_material_vertsplit = 'visible'
 
 colorscheme equinusocio_material
 
