@@ -6,13 +6,15 @@ Try this theme if others don't meet your needs.
 
 ## Preview
 
-### Default
+### Darker
 
 ![](./screenshots/0.png)
 
-### Darker
+### Default
 
 ![](./screenshots/1.png)
+
+Note that syntax highlighting in screenshots was enhanced by [octol/vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight), you may like to install it manully.
 
 ## How to use
 
