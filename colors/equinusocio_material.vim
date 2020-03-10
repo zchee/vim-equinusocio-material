@@ -175,7 +175,7 @@ call s:HL('PreCondit', s:cyan, s:none, s:none)
 call s:HL('Type', s:yellow, s:none, s:none)
 call s:HL('StorageClass', s:magenta, s:none, s:none)
 call s:HL('Structure', s:magenta, s:none, s:none)
-call s:HL('Typedef', s:magenta, s:none, s:none)
+call s:HL('Typedef', s:yellow, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Special', s:cyan, s:none, s:none)
 " ----------------------------------------------------
