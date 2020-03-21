@@ -42,11 +42,13 @@ if get(g:, 'equinusocio_material_style', 'default') == 'darker'
   let s:background = '#212121'
   let s:cursor_guide = '#171717'
   let s:selection = '#616161'
+  let s:indent_line = '#424242'
 else
   let s:black_soft = '#546e7a'
   let s:background = '#263238'
   let s:cursor_guide = '#1b2327'
   let s:selection = '#667278'
+  let s:indent_line = '#37474f'
 endif
 
 let s:black = '#000000'
@@ -132,7 +134,7 @@ call s:HL('MatchParen', s:black, s:red, s:none)
 " ----------------------------------------------------
 call s:HL('ModeMsg', s:foreground, s:none, s:none)
 call s:HL('MoreMsg', s:red, s:none, s:none)
-call s:HL('NonText', s:black_soft, s:none, s:none)
+call s:HL('NonText', s:indent_line, s:none, s:none)
 call s:HL('Normal', s:foreground, s:background, s:none) " base color
 " ----------------------------------------------------
 call s:HL('Pmenu', s:foreground, s:black_soft, s:none)
