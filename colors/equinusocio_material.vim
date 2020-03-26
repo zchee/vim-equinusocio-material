@@ -63,6 +63,7 @@ let s:white = '#ffffff'
 " ---------------------------
 let s:foreground = '#eeffff'
 let s:caret = '#ffcc00'
+let s:errorline = '#560027'
 " ---------------------------
 let s:none = 'NONE'
 let s:underline = 'underline'
@@ -147,10 +148,10 @@ call s:HL('QuickFixLine', s:foreground, s:background, s:none) " link it to norma
 call s:HL('Search', s:black, s:magenta, s:none)
 call s:HL('SpecialKey', s:black_soft, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('SpellBad', s:none, s:black, s:none)
-call s:HL('SpellCap', s:none, s:black, s:none)
-call s:HL('SpellLocal', s:none, s:black, s:none)
-call s:HL('SpellRare', s:none, s:black, s:none)
+call s:HL('SpellBad', s:none, s:errorline, s:none)
+call s:HL('SpellCap', s:none, s:errorline, s:none)
+call s:HL('SpellLocal', s:none, s:errorline, s:none)
+call s:HL('SpellRare', s:none, s:errorline, s:none)
 " ----------------------------------------------------
 call s:HL('StatusLine', s:foreground, s:none, s:none)
 call s:HL('StatusLineNC', s:black_soft, s:none, s:none)
