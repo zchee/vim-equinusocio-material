@@ -63,7 +63,7 @@ let s:white = '#ffffff'
 " ---------------------------
 let s:foreground = '#eeffff'
 let s:caret = '#ffcc00'
-let s:errorline = '#560027'
+let s:errorline = '#1b0000'
 " ---------------------------
 let s:none = 'NONE'
 let s:underline = 'underline'
