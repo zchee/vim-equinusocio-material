@@ -196,13 +196,13 @@ call s:HL('Keyword', s:magenta, s:none, s:none)
 call s:HL('Exception', s:cyan, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('PreProc', s:cyan, s:none, s:none)
-call s:HL('Include', s:cyan, s:none, s:none)
+call s:HL('Include', s:yellow, s:none, s:none)
 call s:HL('Define', s:blue, s:none, s:none)
 call s:HL('Macro', s:blue, s:none, s:none)
-call s:HL('PreCondit', s:cyan, s:none, s:none)
+call s:HL('PreCondit', s:yellow, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Type', s:yellow, s:none, s:none)
-call s:HL('StorageClass', s:magenta, s:none, s:none)
+call s:HL('StorageClass', s:yellow, s:none, s:none)
 call s:HL('Structure', s:magenta, s:none, s:none)
 call s:HL('Typedef', s:yellow, s:none, s:none)
 " ----------------------------------------------------
