@@ -24,13 +24,13 @@
 
 if exists('g:lightline')
 
-  if get(g:, 'equinusocio_material_style', 'default') == 'darker'
-    let s:black_soft = '#545454'
+  if get(g:, 'equinusocio_material_darker', 0) == 1
+    let s:black_br = '#545454'
     let s:background = '#212121'
     let s:cursor_guide = '#171717'
     let s:background_lighter = '#2f2f2f'
   else
-    let s:black_soft = '#556e79'
+    let s:black_br = '#556e79'
     let s:background = '#263238'
     let s:cursor_guide = '#1b2327'
     let s:background_lighter = '#344046'
@@ -44,28 +44,28 @@ if exists('g:lightline')
   let s:blue = '#82aaff'
   let s:magenta = '#c792ea'
   let s:cyan = '#89ddff'
-  let s:white = '#ffffff'
-  let s:foreground = '#eeffff'
+  let s:white = s:black_br
+  let s:foreground = '#eeeeee'
 
   let s:p = { 'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {} }
 
-  let s:p.normal.left = [ [ s:black, s:cyan ], [ s:foreground, s:black_soft ] ]
-  let s:p.normal.right = [ [ s:black, s:cyan ], [ s:foreground, s:black_soft ] ]
+  let s:p.normal.left = [ [ s:black, s:cyan ], [ s:foreground, s:black_br ] ]
+  let s:p.normal.right = [ [ s:black, s:cyan ], [ s:foreground, s:black_br ] ]
   let s:p.normal.middle = [ [ s:foreground, s:background_lighter ] ]
   let s:p.normal.error = [ [ s:foreground, s:red ] ]
   let s:p.normal.warning = [ [ s:foreground, s:orange ] ]
 
-  let s:p.insert.left = [ [ s:black, s:green ], [ s:foreground, s:black_soft ] ]
-  let s:p.insert.right = [ [ s:black, s:green ], [ s:foreground, s:black_soft ] ]
+  let s:p.insert.left = [ [ s:black, s:green ], [ s:foreground, s:black_br ] ]
+  let s:p.insert.right = [ [ s:black, s:green ], [ s:foreground, s:black_br ] ]
 
-  let s:p.replace.left = [ [ s:black, s:red ], [ s:foreground, s:black_soft ] ]
-  let s:p.replace.right = [ [ s:black, s:red ], [ s:foreground, s:black_soft ] ]
+  let s:p.replace.left = [ [ s:black, s:red ], [ s:foreground, s:black_br ] ]
+  let s:p.replace.right = [ [ s:black, s:red ], [ s:foreground, s:black_br ] ]
 
-  let s:p.visual.left = [ [ s:black, s:yellow ], [ s:foreground, s:black_soft ] ]
-  let s:p.visual.right = [ [ s:black, s:yellow ], [ s:foreground, s:black_soft ] ]
+  let s:p.visual.left = [ [ s:black, s:yellow ], [ s:foreground, s:black_br ] ]
+  let s:p.visual.right = [ [ s:black, s:yellow ], [ s:foreground, s:black_br ] ]
 
-  let s:p.inactive.left =  [ [ s:foreground, s:black_soft ], [ s:foreground, s:black_soft ] ]
-  let s:p.inactive.right = [ [ s:foreground, s:black_soft ], [ s:foreground, s:black_soft ] ]
+  let s:p.inactive.left =  [ [ s:foreground, s:black_br ], [ s:foreground, s:black_br ] ]
+  let s:p.inactive.right = [ [ s:foreground, s:black_br ], [ s:foreground, s:black_br ] ]
   let s:p.inactive.middle = [ [ s:foreground, s:background_lighter ] ]
 
   let s:p.tabline.left = [ [ s:foreground, s:background_lighter ] ]

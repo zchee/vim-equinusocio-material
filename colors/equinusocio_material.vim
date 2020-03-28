@@ -37,14 +37,14 @@ if !(has('termguicolors') && &termguicolors) && !has('gui_running') && !has('nvi
   finish
 endif
 
-if get(g:, 'equinusocio_material_style', 'default') == 'darker'
-  let s:black_soft = '#545454'
+if get(g:, 'equinusocio_material_darker', 0) == 1
+  let s:black_br = '#545454'
   let s:background = '#212121'
   let s:cursor_guide = '#171717'
   let s:selection = '#616161'
   let s:indent_line = '#424242'
 else
-  let s:black_soft = '#546e7a'
+  let s:black_br = '#546e7a'
   let s:background = '#263238'
   let s:cursor_guide = '#1b2327'
   let s:selection = '#667278'
@@ -59,11 +59,15 @@ let s:orange = '#f78c6c'
 let s:blue = '#82aaff'
 let s:magenta = '#c792ea'
 let s:cyan = '#89ddff'
-let s:white = '#ffffff'
+let s:white = s:black_br
+let s:white_br = s:black_br
 " ---------------------------
-let s:foreground = '#eeffff'
+let s:foreground = '#eeeeee'
 let s:caret = '#ffcc00'
 let s:errorline = '#1b0000'
+" ---------------------------
+let s:pure_black = '#000000'
+let s:pure_white = '#ffffff'
 " ---------------------------
 let s:none = 'NONE'
 let s:underline = 'underline'
@@ -118,18 +122,18 @@ call s:HL('EndOfBuffer', s:background, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('ErrorMsg', s:red, s:none, s:none)
 " ----------------------------------------------------
-if get(g:, 'equinusocio_material_vertsplit', 'default') == 'visible'
-  call s:HL('VertSplit', s:cursor_guide, s:none, s:none)
-else
+if get(g:, 'equinusocio_material_hide_vertsplit', 0) == 1
   call s:HL('VertSplit', s:background, s:none, s:none)
+else
+  call s:HL('VertSplit', s:cursor_guide, s:none, s:none)
 endif
 " ----------------------------------------------------
-call s:HL('Folded', s:foreground, s:black_soft, s:none)
+call s:HL('Folded', s:foreground, s:black_br, s:none)
 call s:HL('FoldColumn', s:foreground, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('SignColumn', s:none, s:none, s:none)
 call s:HL('IncSearch', s:black, s:magenta, s:none)
-call s:HL('LineNr', s:black_soft, s:none, s:none)
+call s:HL('LineNr', s:black_br, s:none, s:none)
 call s:HL('CursorLineNr', s:foreground, s:none, s:none)
 call s:HL('MatchParen', s:black, s:red, s:none)
 " ----------------------------------------------------
@@ -138,15 +142,15 @@ call s:HL('MoreMsg', s:red, s:none, s:none)
 call s:HL('NonText', s:indent_line, s:none, s:none)
 call s:HL('Normal', s:foreground, s:background, s:none) " base color
 " ----------------------------------------------------
-call s:HL('Pmenu', s:foreground, s:black_soft, s:none)
+call s:HL('Pmenu', s:foreground, s:black_br, s:none)
 call s:HL('PmenuSel', s:cyan, s:black, s:none)
-call s:HL('PmenuSbar', s:none, s:black_soft, s:none)
+call s:HL('PmenuSbar', s:none, s:black_br, s:none)
 call s:HL('PmenuThumb', s:none, s:foreground, s:none)
 " ----------------------------------------------------
 call s:HL('Question', s:red, s:none, s:none)
 call s:HL('QuickFixLine', s:foreground, s:background, s:none) " link it to normal
 call s:HL('Search', s:black, s:magenta, s:none)
-call s:HL('SpecialKey', s:black_soft, s:none, s:none)
+call s:HL('SpecialKey', s:black_br, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('SpellBad', s:none, s:errorline, s:none)
 call s:HL('SpellCap', s:none, s:errorline, s:none)
@@ -154,13 +158,13 @@ call s:HL('SpellLocal', s:none, s:errorline, s:none)
 call s:HL('SpellRare', s:none, s:errorline, s:none)
 " ----------------------------------------------------
 call s:HL('StatusLine', s:foreground, s:none, s:none)
-call s:HL('StatusLineNC', s:black_soft, s:none, s:none)
+call s:HL('StatusLineNC', s:black_br, s:none, s:none)
 call s:HL('StatusLineTerm', s:foreground, s:none, s:none)
-call s:HL('StatusLineTermNC', s:black_soft, s:none, s:none)
+call s:HL('StatusLineTermNC', s:black_br, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('TabLine', s:foreground, s:none, s:none)
 call s:HL('TabLineFill', s:none, s:none, s:none)
-call s:HL('TabLineSel', s:foreground, s:black_soft, s:none)
+call s:HL('TabLineSel', s:foreground, s:black_br, s:none)
 call s:HL('Terminal', s:foreground, s:background, s:none)
 call s:HL('Title', s:red, s:none, s:none)
 call s:HL('Visual', s:foreground, s:selection, s:none)
@@ -173,7 +177,7 @@ call s:HL('WildMenu', s:black, s:cyan, s:none)
 " ====================================================
 " standard syntax
 " ----------------------------------------------------
-call s:HL('Comment', s:black_soft, s:none, s:none)
+call s:HL('Comment', s:black_br, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Constant', s:foreground, s:none, s:none)
 call s:HL('String', s:green, s:none, s:none)
@@ -222,14 +226,14 @@ if has('nvim')
   let g:terminal_color_5 = s:magenta
   let g:terminal_color_6 = s:cyan
   let g:terminal_color_7 = s:white
-  let g:terminal_color_8 = s:black_soft
+  let g:terminal_color_8 = s:black_br
   let g:terminal_color_9 = s:red
   let g:terminal_color_10 = s:green
   let g:terminal_color_11 = s:yellow
   let g:terminal_color_12 = s:blue
   let g:terminal_color_13 = s:magenta
   let g:terminal_color_14 = s:cyan
-  let g:terminal_color_15 = s:white
+  let g:terminal_color_15 = s:white_br
 elseif exists('*term_setansicolors')
   let g:terminal_ansi_colors = [
     \ s:black,
@@ -240,14 +244,14 @@ elseif exists('*term_setansicolors')
     \ s:magenta,
     \ s:cyan,
     \ s:white,
-    \ s:black_soft,
+    \ s:black_br,
     \ s:red,
     \ s:green,
     \ s:yellow,
     \ s:blue,
     \ s:magenta,
     \ s:cyan,
-    \ s:white,
+    \ s:white_br,
     \ ]
 endif
 " ====================================================
