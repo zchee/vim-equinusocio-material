@@ -44,7 +44,7 @@ if exists('g:lightline')
   let s:blue = '#82aaff'
   let s:magenta = '#c792ea'
   let s:cyan = '#89ddff'
-  let s:white = s:black_br
+  let s:white = '#eeeeee'
   let s:foreground = '#eeeeee'
 
   let s:p = { 'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {} }

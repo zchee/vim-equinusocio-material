@@ -59,8 +59,7 @@ let s:orange = '#f78c6c'
 let s:blue = '#82aaff'
 let s:magenta = '#c792ea'
 let s:cyan = '#89ddff'
-let s:white = s:black_br
-let s:white_br = s:black_br
+let s:white = '#eeeeee'
 " ---------------------------
 let s:foreground = '#eeeeee'
 let s:caret = '#ffcc00'
@@ -233,7 +232,7 @@ if has('nvim')
   let g:terminal_color_12 = s:blue
   let g:terminal_color_13 = s:magenta
   let g:terminal_color_14 = s:cyan
-  let g:terminal_color_15 = s:white_br
+  let g:terminal_color_15 = s:white
 elseif exists('*term_setansicolors')
   let g:terminal_ansi_colors = [
     \ s:black,
@@ -251,7 +250,7 @@ elseif exists('*term_setansicolors')
     \ s:blue,
     \ s:magenta,
     \ s:cyan,
-    \ s:white_br,
+    \ s:white,
     \ ]
 endif
 " ====================================================
