@@ -32,10 +32,10 @@ set termguicolors
 set background=dark
 
 " if you prefer the default one, comment out this line
-let g:equinusocio_material_style = 'darker'
+let g:equinusocio_material_darker = 1
 
-" comment out this line to make vertsplit invisible
-let g:equinusocio_material_vertsplit = 'visible'
+" make vertsplit invisible
+let g:equinusocio_material_hide_vertsplit = 1
 
 colorscheme equinusocio_material
 
