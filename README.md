@@ -49,6 +49,8 @@ let g:lightline = {
 
 If you are using iterm, you might like to try this [chuling/iterm2-equinusocio-material](https://github.com/chuling/iterm2-equinusocio-material).
 
+Or you can get it here: [term](./term)
+
 ## License
 
 [MIT License](LICENSE-MIT)
