@@ -195,7 +195,7 @@ call s:HL('Keyword', s:magenta, s:none, s:none)
 call s:HL('Exception', s:cyan, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('PreProc', s:cyan, s:none, s:none)
-call s:HL('Include', s:yellow, s:none, s:none)
+call s:HL('Include', s:cyan, s:none, s:none)
 call s:HL('Define', s:blue, s:none, s:none)
 call s:HL('Macro', s:blue, s:none, s:none)
 call s:HL('PreCondit', s:yellow, s:none, s:none)
