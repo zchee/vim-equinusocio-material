@@ -1,4 +1,4 @@
-# Equinusocio's material theme for vim
+# Equinusocio's material theme for Vim/Neovim
 
 ![license: MIT](https://img.shields.io/badge/license-MIT-A31F34)
 
@@ -29,7 +29,6 @@ Plug 'chuling/vim-equinusocio-material'
 
 " true colors are required for vim in terminal
 set termguicolors
-set background=dark
 
 " if you prefer the default one, comment out this line
 let g:equinusocio_material_darker = 1
