@@ -31,11 +31,12 @@ if version > 580
   endif
 endif
 
-let g:colors_name = "equinusocio_material"
-
-if !(has('termguicolors') && &termguicolors) && !has('gui_running') && !has('nvim')
+if !(has('termguicolors') && &termguicolors) && !has('gui_running')
   finish
 endif
+
+let g:colors_name = "equinusocio_material"
+set background=dark
 
 if get(g:, 'equinusocio_material_darker', 0) == 1
   let s:black_br = '#545454'
