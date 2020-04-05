@@ -60,14 +60,13 @@ let s:orange = '#f78c6c'
 let s:blue = '#82aaff'
 let s:magenta = '#c792ea'
 let s:cyan = '#89ddff'
-let s:white = '#eeeeee'
+let s:white = '#eeffff'
 " ---------------------------
-let s:foreground = '#eeeeee'
+let s:foreground = '#eeffff'
 let s:caret = '#ffcc00'
 let s:errorline = '#1b0000'
 " ---------------------------
 let s:pure_black = '#000000'
-let s:pure_white = '#ffffff'
 " ---------------------------
 let s:none = 'NONE'
 let s:underline = 'underline'
