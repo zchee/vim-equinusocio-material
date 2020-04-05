@@ -64,7 +64,7 @@ let s:white = '#eeffff'
 " ---------------------------
 let s:foreground = '#eeffff'
 let s:caret = '#ffcc00'
-let s:errorline = '#1b0000'
+" let s:errorline = '#1b0000'
 " ---------------------------
 let s:pure_black = '#000000'
 " ---------------------------
@@ -152,10 +152,14 @@ highlight! link QuickFixLine Normal " link it to normal
 call s:HL('Search', s:black, s:magenta, s:none)
 call s:HL('SpecialKey', s:black_br, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('SpellBad', s:none, s:errorline, s:none)
-call s:HL('SpellCap', s:none, s:errorline, s:none)
-call s:HL('SpellLocal', s:none, s:errorline, s:none)
-call s:HL('SpellRare', s:none, s:errorline, s:none)
+" call s:HL('SpellBad', s:none, s:errorline, s:none)
+" call s:HL('SpellCap', s:none, s:errorline, s:none)
+" call s:HL('SpellLocal', s:none, s:errorline, s:none)
+" call s:HL('SpellRare', s:none, s:errorline, s:none)
+call s:HL('SpellBad', s:none, s:none, s:underline)
+call s:HL('SpellCap', s:none, s:none, s:underline)
+call s:HL('SpellLocal', s:none, s:none, s:underline)
+call s:HL('SpellRare', s:none, s:none, s:underline)
 " ----------------------------------------------------
 call s:HL('StatusLine', s:foreground, s:none, s:none)
 call s:HL('StatusLineNC', s:black_br, s:none, s:none)
