@@ -147,7 +147,8 @@ call s:HL('PmenuSbar', s:none, s:black_br, s:none)
 call s:HL('PmenuThumb', s:none, s:foreground, s:none)
 " ----------------------------------------------------
 call s:HL('Question', s:red, s:none, s:none)
-call s:HL('QuickFixLine', s:foreground, s:background, s:none) " link it to normal
+" call s:HL('QuickFixLine', s:foreground, s:background, s:none)
+highlight! link QuickFixLine Normal " link it to normal
 call s:HL('Search', s:black, s:magenta, s:none)
 call s:HL('SpecialKey', s:black_br, s:none, s:none)
 " ----------------------------------------------------
@@ -212,6 +213,19 @@ call s:HL('Ignore', s:none, s:none, s:none)
 call s:HL('Error', s:red, s:none, s:none)
 call s:HL('Todo', s:orange, s:none, s:none)
 " ====================================================
+
+
+" ====================================================
+" ale
+" ----------------------------------------------------
+highlight! link ALEError Underlined
+highlight! link ALEWarning Underlined
+highlight! link ALEInfo Underlined
+call s:HL('ALEErrorSign', s:red, s:none, s:none)
+call s:HL('ALEWarningSign', s:orange, s:none, s:none)
+call s:HL('ALEInfoSign', s:blue, s:none, s:none)
+" ====================================================
+
 
 " ====================================================
 " vim8/neovim buildin terminal colors
