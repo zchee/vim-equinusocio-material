@@ -208,7 +208,7 @@ call s:HL('Typedef', s:yellow, s:none, s:none)
 " ----------------------------------------------------
 call s:HL('Special', s:cyan, s:none, s:none)
 " ----------------------------------------------------
-call s:HL('Underlined', s:blue, s:none, s:underline)
+call s:HL('Underlined', s:none, s:none, s:underline)
 call s:HL('Ignore', s:none, s:none, s:none)
 call s:HL('Error', s:red, s:none, s:none)
 call s:HL('Todo', s:orange, s:none, s:none)
