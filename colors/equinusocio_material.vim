@@ -232,6 +232,14 @@ call s:HL('ALEInfoSign', s:blue, s:none, s:none)
 
 
 " ====================================================
+" echodoc
+" ----------------------------------------------------
+call s:HL('EchoDocFloat', s:foreground, s:black, s:none)
+highlight! link EchoDocPopup EchoDocFloat
+" ====================================================
+
+
+" ====================================================
 " vim8/neovim buildin terminal colors
 " ----------------------------------------------------
 if has('nvim')
