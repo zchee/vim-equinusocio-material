@@ -240,6 +240,56 @@ highlight! link EchoDocPopup EchoDocFloat
 
 
 " ====================================================
+" coc.nvim
+" ----------------------------------------------------
+call s:HL('CocErrorSign', s:red, s:none, s:none)
+call s:HL('CocWarningSign', s:orange, s:none, s:none)
+call s:HL('CocInfoSign', s:yellow, s:none, s:none)
+call s:HL('CocHintSign', s:blue, s:none, s:none)
+
+call s:HL('CocErrorFloat', s:red, s:black, s:none)
+call s:HL('CocWarningFloat', s:orange, s:black, s:none)
+call s:HL('CocInfoFloat', s:yellow, s:black, s:none)
+call s:HL('CocHintFloat', s:blue, s:black, s:none)
+
+call s:HL('CocDiagnosticsError', s:red, s:none, s:none)
+call s:HL('CocDiagnosticsWarning', s:orange, s:none, s:none)
+call s:HL('CocDiagnosticsInfo', s:yellow, s:none, s:none)
+call s:HL('CocDiagnosticsHint', s:blue, s:none, s:none)
+
+call s:HL('CocSelectedText', s:red, s:none, s:none)
+call s:HL('CocCodeLens', s:black_br, s:none, s:none)
+
+highlight! link CocErrorHighlight Underlined
+highlight! link CocWarningHighlight Underlined
+highlight! link CocInfoHighlight Underlined
+highlight! link CocHintHighlight Underlined
+
+" ----------- gruvbox coc.nvim ---------
+" hi! link CocErrorSign GruvboxRedSign
+" hi! link CocWarningSign GruvboxOrangeSign
+" hi! link CocInfoSign GruvboxYellowSign
+" hi! link CocHintSign GruvboxBlueSign
+" hi! link CocErrorFloat GruvboxRed
+" hi! link CocWarningFloat GruvboxOrange
+" hi! link CocInfoFloat GruvboxYellow
+" hi! link CocHintFloat GruvboxBlue
+" hi! link CocDiagnosticsError GruvboxRed
+" hi! link CocDiagnosticsWarning GruvboxOrange
+" hi! link CocDiagnosticsInfo GruvboxYellow
+" hi! link CocDiagnosticsHint GruvboxBlue
+
+" hi! link CocSelectedText GruvboxRed
+" hi! link CocCodeLens GruvboxGray
+
+" call s:HL('CocErrorHighlight', s:none, s:none, s:undercurl, s:red)
+" call s:HL('CocWarningHighlight', s:none, s:none, s:undercurl, s:orange)
+" call s:HL('CocInfoHighlight', s:none, s:none, s:undercurl, s:yellow)
+" call s:HL('CocHintHighlight', s:none, s:none, s:undercurl, s:blue)
+" ====================================================
+
+
+" ====================================================
 " vim8/neovim buildin terminal colors
 " ----------------------------------------------------
 if has('nvim')
