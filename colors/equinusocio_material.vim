@@ -226,8 +226,8 @@ highlight! link ALEError Underlined
 highlight! link ALEWarning Underlined
 highlight! link ALEInfo Underlined
 call s:HL('ALEErrorSign', s:red, s:none, s:none)
-call s:HL('ALEWarningSign', s:orange, s:none, s:none)
-call s:HL('ALEInfoSign', s:blue, s:none, s:none)
+call s:HL('ALEWarningSign', s:yellow, s:none, s:none)
+call s:HL('ALEInfoSign', s:cyan, s:none, s:none)
 " ====================================================
 
 
@@ -243,20 +243,20 @@ highlight! link EchoDocPopup EchoDocFloat
 " coc.nvim
 " ----------------------------------------------------
 call s:HL('CocErrorSign', s:red, s:none, s:none)
-call s:HL('CocWarningSign', s:orange, s:none, s:none)
+call s:HL('CocWarningSign', s:yellow, s:none, s:none)
 call s:HL('CocInfoSign', s:yellow, s:none, s:none)
-call s:HL('CocHintSign', s:blue, s:none, s:none)
+call s:HL('CocHintSign', s:cyan, s:none, s:none)
 
 call s:HL('CocFloating', s:foreground, s:black, s:none)
 call s:HL('CocErrorFloat', s:red, s:black, s:none)
-call s:HL('CocWarningFloat', s:orange, s:black, s:none)
+call s:HL('CocWarningFloat', s:yellow, s:black, s:none)
 call s:HL('CocInfoFloat', s:yellow, s:black, s:none)
-call s:HL('CocHintFloat', s:blue, s:black, s:none)
+call s:HL('CocHintFloat', s:cyan, s:black, s:none)
 
 call s:HL('CocDiagnosticsError', s:red, s:none, s:none)
-call s:HL('CocDiagnosticsWarning', s:orange, s:none, s:none)
+call s:HL('CocDiagnosticsWarning', s:yellow, s:none, s:none)
 call s:HL('CocDiagnosticsInfo', s:yellow, s:none, s:none)
-call s:HL('CocDiagnosticsHint', s:blue, s:none, s:none)
+call s:HL('CocDiagnosticsHint', s:cyan, s:none, s:none)
 
 " call s:HL('CocSelectedText', s:red, s:none, s:none)
 " call s:HL('CocCodeLens', s:black_br, s:none, s:none)
