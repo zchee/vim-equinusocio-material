@@ -147,8 +147,7 @@ call s:HL('PmenuSbar', s:none, s:black_br, s:none)
 call s:HL('PmenuThumb', s:none, s:foreground, s:none)
 " ----------------------------------------------------
 call s:HL('Question', s:red, s:none, s:none)
-" call s:HL('QuickFixLine', s:foreground, s:background, s:none)
-highlight! link QuickFixLine Normal " link it to normal
+call s:HL('QuickFixLine', s:foreground, s:background, s:none) " link it to normal
 call s:HL('Search', s:black, s:magenta, s:none)
 call s:HL('SpecialKey', s:black_br, s:none, s:none)
 " ----------------------------------------------------
@@ -222,9 +221,10 @@ call s:HL('Todo', s:orange, s:none, s:none)
 " ====================================================
 " ale
 " ----------------------------------------------------
-highlight! link ALEError Underlined
-highlight! link ALEWarning Underlined
-highlight! link ALEInfo Underlined
+call s:HL('ALEError', s:none, s:none, s:underline)
+call s:HL('ALEWarning', s:none, s:none, s:underline)
+call s:HL('ALEInfo', s:none, s:none, s:underline)
+
 call s:HL('ALEErrorSign', s:red, s:none, s:none)
 call s:HL('ALEWarningSign', s:yellow, s:none, s:none)
 call s:HL('ALEInfoSign', s:cyan, s:none, s:none)
@@ -235,7 +235,7 @@ call s:HL('ALEInfoSign', s:cyan, s:none, s:none)
 " echodoc
 " ----------------------------------------------------
 call s:HL('EchoDocFloat', s:foreground, s:black, s:none)
-highlight! link EchoDocPopup EchoDocFloat
+call s:HL('EchoDocPopup', s:foreground, s:black, s:none)
 " ====================================================
 
 
@@ -244,27 +244,25 @@ highlight! link EchoDocPopup EchoDocFloat
 " ----------------------------------------------------
 call s:HL('CocErrorSign', s:red, s:none, s:none)
 call s:HL('CocWarningSign', s:yellow, s:none, s:none)
-call s:HL('CocInfoSign', s:yellow, s:none, s:none)
+call s:HL('CocInfoSign', s:orange, s:none, s:none)
 call s:HL('CocHintSign', s:cyan, s:none, s:none)
 
 call s:HL('CocFloating', s:foreground, s:black, s:none)
 call s:HL('CocErrorFloat', s:red, s:black, s:none)
 call s:HL('CocWarningFloat', s:yellow, s:black, s:none)
-call s:HL('CocInfoFloat', s:yellow, s:black, s:none)
+call s:HL('CocInfoFloat', s:orange, s:black, s:none)
 call s:HL('CocHintFloat', s:cyan, s:black, s:none)
 
-call s:HL('CocDiagnosticsError', s:red, s:none, s:none)
-call s:HL('CocDiagnosticsWarning', s:yellow, s:none, s:none)
-call s:HL('CocDiagnosticsInfo', s:yellow, s:none, s:none)
-call s:HL('CocDiagnosticsHint', s:cyan, s:none, s:none)
+" --- not found in coc.nvim doc ---
+" call s:HL('CocDiagnosticsError', s:red, s:none, s:none)
+" call s:HL('CocDiagnosticsWarning', s:yellow, s:none, s:none)
+" call s:HL('CocDiagnosticsInfo', s:yellow, s:none, s:none)
+" call s:HL('CocDiagnosticsHint', s:cyan, s:none, s:none)
 
-" call s:HL('CocSelectedText', s:red, s:none, s:none)
-" call s:HL('CocCodeLens', s:black_br, s:none, s:none)
-
-highlight! link CocErrorHighlight Underlined
-highlight! link CocWarningHighlight Underlined
-highlight! link CocInfoHighlight Underlined
-highlight! link CocHintHighlight Underlined
+call s:HL('CocErrorHighlight', s:none, s:none, s:underline)
+call s:HL('CocWarningHighlight', s:none, s:none, s:underline)
+call s:HL('CocInfoHighlight', s:none, s:none, s:underline)
+call s:HL('CocHintHighlight', s:none, s:none, s:underline)
 
 " ----------- gruvbox coc.nvim ---------
 " hi! link CocErrorSign GruvboxRedSign
