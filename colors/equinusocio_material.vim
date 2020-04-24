@@ -295,8 +295,14 @@ augroup equinusocio_material_hi_parentheses
   autocmd Syntax * syntax match MaterialThemeParens /[(){}]/
 augroup END
 call s:HL('MaterialThemeParens', s:cyan, s:none, s:none)
+" rainbow
+if !exists('g:rainbow_conf')
+   let g:rainbow_conf = {}
+endif
+if !has_key(g:rainbow_conf, 'guifgs')
+   let g:rainbow_conf['guifgs'] = [s:cyan, s:yellow, s:red]
+endif
 " ====================================================
-
 
 " ====================================================
 " vim8/neovim buildin terminal colors
