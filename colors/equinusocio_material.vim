@@ -287,6 +287,16 @@ call s:HL('CocHintHighlight', s:none, s:none, s:underline)
 " call s:HL('CocHintHighlight', s:none, s:none, s:undercurl, s:blue)
 " ====================================================
 
+" ====================================================
+" parentheses
+" ----------------------------------------------------
+augroup equinusocio_material_hi_parentheses
+  autocmd!
+  autocmd Syntax * syntax match MaterialThemeParens /[(){}]/
+augroup END
+call s:HL('MaterialThemeParens', s:cyan, s:none, s:none)
+" ====================================================
+
 
 " ====================================================
 " vim8/neovim buildin terminal colors
